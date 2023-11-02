@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+          const pi = Math.PI; // const is a variable bound to a CONSTANT value(that does not change)
+          const phi = (1 + Math.sqrt(5)) / 2; // phi: the golden ratio
+          
+          // for (let i = 0; i <= 10; i = i +1) {
+          //     if(i < Math.PI) {
+          //       console.log("below");
+          //       console.log("inside i: " + i);
+          //     } else {
+          //         console.log("above");
+          //     }
+          // }
+          
+           for (let i = 0; i <= 10; i = i +1) {
+              if(i < pi) {
+                // more computational efficient: recycles a const rather than computes Math.PI each time
+                console.log("below");
+                console.log("inside i: " + i);
+              } else {
+                  console.log("above");
+              }
+          }
+          
+          console.log("outside i" + i); // this line runs AFTER the iteration
+        </script>
+    </body>
+</html>
